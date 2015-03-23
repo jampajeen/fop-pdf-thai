@@ -8,19 +8,12 @@
     <name>fop-pdf-thai</name>
     <description>Thai font for Fop</description>
     <url>http://project.rinxor.com/fop-pdf-thai</url>
-    <properties>
-        <!-- github server corresponds to entry in ~/.m2/settings.xml -->
-        <github.global.server>github</github.global.server>
-    </properties>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
-    <scm>
-        <url>http://svn.apache.org/viewvc/maven</url>
-    </scm>
     <developers>
         <developer>
             <name>Thitipong Jampajeen</name>
@@ -62,12 +55,14 @@
             </plugin>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
                 <executions>
                     <execution>
                         <id>package-sources</id>
@@ -79,6 +74,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>
                 <executions>
                     <execution>
                         <id>package-javadoc</id>
