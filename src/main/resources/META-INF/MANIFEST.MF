@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+
+Name: font/Garuda-Bold.ttf
+Content-Type: application/x-font
+
+Name: font/Garuda-BoldOblique.ttf
+Content-Type: application/x-font
+
+Name: font/Garuda-Oblique.ttf
+Content-Type: application/x-font
+
+Name: font/Garuda.ttf
+Content-Type: application/x-font
+
+Name: fop-pdf-thai.xml
+Content-Type: application/xml
