@@ -2,7 +2,34 @@
 
 This project was created to simplify embedding Thai font to PDF by using Apache FOP.
 
-You can use **"FopPdfThaiFactory"** instead of **"FopFactory"** to create a **"FopFactory"** object.
+Installation
+
+Add repository and dependency to pom.xml
+```
+    <repositories>
+        <repository>
+            <id>snapshots-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <dependencies>
+    	.....
+        <dependency>
+            <groupId>com.rinxor</groupId>
+            <artifactId>fop-pdf-thai</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        .....
+    </dependencies>
+```
+
+Use **"FopPdfThaiFactory"** instead of **"FopFactory"** to create a **"FopFactory"** object.
 
 For example:
 
@@ -21,6 +48,6 @@ Or...
 FopFactory fopFactory = FopPdfThaiFactory.newInstance(new ServletContextURIResolver(getServletContext())); // when you use FOP in servlet context
 ```
 
-And now you can use XSLT to create your first PDF in Thai language.
+And now you can use XSLT to create your first PDF in Thai language (please specify font-family="Garuda").
 Have fun!
 
