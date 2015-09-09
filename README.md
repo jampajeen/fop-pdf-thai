@@ -45,7 +45,8 @@ FopFactory fopFactory = FopPdfThaiFactory.newInstance();
 
 Or...
 ```
-FopFactory fopFactory = FopPdfThaiFactory.newInstance(new ServletContextURIResolver(getServletContext())); // when you use FOP in servlet context
+// when use FOP in servlet context
+FopFactory fopFactory = FopPdfThaiFactory.newInstance(new ServletContextURIResolver(getServletContext())); 
 ```
 
 And now you can use XSLT to create your first PDF in Thai language (please specify font-family="Garuda").
